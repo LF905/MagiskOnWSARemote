@@ -102,7 +102,7 @@ jobs:
             ["COMPRESSION,*.zip (Fast)"]="zip"
             ["COMPRESSION,*.7z (Ultra)"]="7z"   
           )
-      
+
           if [[ "${{ inputs.root_ver }}" == "Magisk Delta (Canary)" ]]; then
             aria2c -d ./download -o magisk-stable.zip https://huskydg.github.io/magisk-files/app-release.apk
           fi
